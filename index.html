@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Habit Tracker</h1>
+    <div class="add-habit">
+      <input type="text" id="habitInput" placeholder="Add a new habit...">
+      <button id="addHabitBtn">Add Habit</button>
+    </div>
+    <div class="habits-container">
+      <div class="stats">
+        <p>Total Habits: <span id="totalHabits">0</span></p>
+        <p>Completed Habits: <span id="completedHabits">0</span></p>
+        <p>Completion Rate: <span id="completionRate">0%</span></p>
+      </div>
+      <div class="filter-clear">
+        <label><input type="checkbox" id="filterCompleted"> Show Completed</label>
+        <button id="clearCompleted">Clear Completed</button>
+        <button id="exportBtn">Export Habits</button>
+        <input type="file" id="importInput" accept=".json" style="display:none;">
+      </div>
+      <ul id="habitList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
